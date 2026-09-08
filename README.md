@@ -1,37 +1,58 @@
 # Nguyen An Khang
 
-**Software & Systems Engineer**  
-Focusing on Backend Architecture, Offline-First Mobile Systems, and Network Infrastructure.
+Software Developer with a foundation in Network Infrastructure & IT Operations.  
+Building pragmatic backend services, Flutter mobile applications, and reliable systems.
 
-[Website](https://ankhang0704.vercel.app) • [Email](mailto:ankhang.nguyen0704@gmail.com) • [GitHub](https://github.com/ankhang0704) • [LinkedIn](https://linkedin.com)
-
----
-
-### 01 / Engineering Thesis
-
-Software systems do not run in an abstract vacuum. They execute on physical operating systems, allocate system memory, and transmit discrete packets across physical networks. 
-
-Having an operational background in **Network Infrastructure & IT Support** shapes how I design applications:
-- When writing backend APIs, I account for connection pooling, serialization overhead, and latency budgets.
-- When engineering mobile clients, I design for network degradation, partition tolerance, and deterministic local storage.
-- My architectural objective is pragmatic: build reliable, maintainable systems that solve business problems without unnecessary operational complexity.
+[Portfolio](https://ankhang0704.vercel.app) • [Email](mailto:ankhang.nguyen0704@gmail.com) • [GitHub](https://github.com/ankhang0704) • [LinkedIn](https://linkedin.com)
 
 ---
 
-### 02 / Architecture & Design Paradigms
+### 01 / Background & Approach
 
-#### Network-Aware Application Design
-Eliminating black-box assumptions between the application layer (L7) and transport/network layers (L3/L4). Structuring RESTful interfaces and socket lifecycles around packet round-trip times, payload budgets, and connection reuse.
+Having practical experience in both software development and network administration, I don't treat operating systems and networks as black boxes. 
 
-#### Offline-First & Deterministic State Sync
-Treating client-side databases (SQLite, Hive, Isar) as the primary source of truth for UI state. Network calls are relegated to asynchronous synchronization pipelines designed to handle intermittent packet loss and offline states gracefully.
-
-#### Modular Monoliths & Bounded Contexts
-Prioritizing cohesive, modular backend design over premature distributed microservices. Decoupling business logic from external drivers and database schemas using Clean Architecture and domain partitioning.
-
-#### Infrastructure as Code & Operational Telemetry
-Standardizing environments through containerization (Docker) and reproducible Linux runtime configurations. Structuring application logs, health probes, and metrics for automated root-cause isolation.
+My working philosophy is straightforward:
+- Choose proven, sensible tools rather than chasing trends.
+- Write clear, maintainable code with explicit business boundaries.
+- Build applications with real-world constraints in mind (network drops, hardware limits, and system maintenance).
 
 ---
 
-### 03 / Technical Domain & Tooling
+### 02 / Tech Stack
+
+[Software & Services]
+Languages    : Python, Dart, Java, C#, TypeScript
+Frameworks   : Django, Django REST Framework, Flutter, Next.js, Spring Boot
+Databases    : PostgreSQL, MySQL, SQLite, Redis, Firebase
+
+[Systems & Infrastructure]
+Platforms    : Linux (Ubuntu/Debian), Docker
+Networking   : Cisco CCNA (Routing, Switching, VLANs, Network Troubleshooting)
+Operations   : Nginx, IT Support, Internal Infrastructure Maintenance
+
+
+---
+
+### 03 / Selected Projects
+
+#### FM Dictionary
+*Offline-First Mobile Application (iOS)*
+- Cross-platform dictionary built with **Flutter** and **Firebase**.
+- Designed for speed, offline search capability, and minimal resource usage.
+
+#### Hotel Management System
+*Full-Stack Web & AI Integration*
+- Management platform built with **Django**, **PostgreSQL**, and **REST APIs**.
+- Implemented room booking workflows, operational dashboards, and an AI-powered assistant for handling guest queries.
+
+#### Phishing Detection Platform
+*Applied Machine Learning & Web Security*
+- Web-based security scanner built with **Django** to detect malicious URLs and phishing emails using ML classification models.
+
+---
+
+### 04 / Principles
+
+1. **Keep it simple:** Avoid accidental complexity. If a monolithic or standard REST pattern solves the problem, use it.
+2. **Handle failures gracefully:** Assume connections will fail, requests will timeout, and inputs will be malformed.
+3. **Readable over clever:** Code is read far more often than it is written.
